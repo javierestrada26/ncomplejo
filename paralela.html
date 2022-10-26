@@ -1,0 +1,30 @@
+<script>
+
+
+var txt1, vec1, vec2, pEscalar
+var start = Date.now(); 
+txt1 = parseInt(prompt('Ingrese el tamaño del vector:'))
+vec1 = new Array(txt1);
+vec2 = new Array (txt1);
+pEscalar = 0;
+
+
+    for (var i = 0;i<txt1;i++){
+        var start = Date.now(); 
+        vec1[i] = Math.round(Math.random()*100);
+        vec2[i] = Math.round(Math.random()*100);
+        //console.log(vec1[i])
+    }
+    for (let i = 0; i < txt1; i++) {
+        pEscalar = pEscalar + (vec1[i]*vec2[i])
+        var end = Date.now();
+    }
+
+        var end = Date.now();
+        console.log('El tamaño del vector es de ',txt1)
+        console.log('El producto escalar optimo entre los dos vectores es de ',pEscalar)
+        console.log('El tiempo de ejecucion es de: ',end - start,'ms');
+    
+</script>
+
+
